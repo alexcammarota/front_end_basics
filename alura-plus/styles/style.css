@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --branco-principal-texto: #FFFFFF;
+    --cinza-secundario-texto: #C0C0C0;
+    --branco-descricao-texto: #F9F9F9;
+    --botao-azul: #167BF7;
+    --botao-azul-hover: #63a4f3; 
+    --cor-de-fundo: #00030C;
+}
+
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal-texto);
+    height: 100vh;
+}
+
+.combos {
+    background-image: url(../assets/images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.combos__conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 13rem;
+}
+
+.combos__conteudo__titulo{
+    font-size: 1.75rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.combos__conteudo__assinatura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 0 10%;
+
+}
+
+.combos__conteudo__assinatura__imagem {
+    padding: 10%;
+}
+
+.combos__conteudo__assinatura__botao {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.combos__conteudo__assinatura__botao.principal {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal-texto);
+}
+
+.combos__conteudo__assinatura__botao.principal:hover,  .combos__conteudo__assinatura__botao.secundario:hover{
+    background-color: var(--botao-azul-hover);
+    color: var(--cor-de-fundo);   
+}
+
+.combos__conteudo__assinatura__botao.secundario {
+    color: var(--branco-principal-texto);
+    border: 1px solid var(--branco-principal-texto);
+
+}
+
+.combos__conteudo__assinatura__descricao {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario-texto);
+}
+
+
+.secao-secundaria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 0px 22rem;
+}
+
+.secao-secundaria__conteudo__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal-texto);
+    margin-bottom: 0.5rem;
+}
+
+.secao-secundaria__conteudo__descricao{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--branco-descricao-texto);
+}
+
+.secundario__conteudo {
+    display: inline-block;
+}
+
+.secao-secundaria .combos__conteudo__assinatura__botao.principal{
+    display: inline-block;
+    margin-top: 0.8rem;
+}
+
+.dispositivos{
+    text-align: center;
+    padding: 14rem 0;
+}
+
+.dispositivos__titulo{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 3rem;
+}
+
+.footer{
+    text-align: center;
+    
+}
+
+.footer__lista{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 2rem 0;
+    gap: 1.5rem;
+}
+
+.footer__lista__item__link{
+    color: var(--branco-principal-texto);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer__texto{
+    font-size: 0.875rem;
+    color: var(--cinza-secundario-texto);
+    padding-bottom: 1rem;
+}
