@@ -1,0 +1,17 @@
+@import url("header.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root{
+    --cor-cabecalho: #FFFFFF;
+    --cor-de-fundo: #C4C4C4;
+    --cor-botao: #EB9B00;
+    --cor-sessao-fundo: #002F52;
+    --cor-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
