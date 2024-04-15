@@ -43,7 +43,7 @@
 }
 
 .header__menu-checkbox:checked~.header__menu__label  {
-    background: var(--cor-gradiente);
+    background: linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
 }
 
 .header__menu-checkbox:checked~.header__menu__label>.header__menu  {
@@ -63,7 +63,13 @@
 }
 
 .header__lista__item {
-    color: var(--cor-gradiente);
+    color: linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
+    /* Para navegadores WebKit (Chrome, Safari) */
+    color: -webkit-linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim)  var(--posicao-segundo-ponto-gradiente));
+    /* Para navegadores antigos da Mozilla */
+    color: -moz-linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
+    /* Para navegadores antigos do Internet Explorer */
+    color: -ms-linear-gradient(var(--angulo-gradiente)g, var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
     text-transform: uppercase;
 }
 
