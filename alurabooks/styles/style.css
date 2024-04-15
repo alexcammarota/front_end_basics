@@ -7,7 +7,10 @@
     --cor-de-fundo: #C4C4C4;
     --cor-botao: #EB9B00;
     --cor-sessao-fundo: #002F52;
-    --cor-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --angulo-gradiente: 97.54deg;
+    --cor-gradiente-inicio: #002F52;
+    --cor-gradiente-fim: #326589;
+    --posicao-segundo-ponto-gradiente: 165.37%;
 }
 
 body{
