@@ -1,0 +1,24 @@
+
+.carrossel__titulo {
+    text-align: center;
+    color: var(--cor-botao);
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: var(--cor-cabecalho);
+    text-transform: uppercase;
+    padding: 0.75rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.25rem 0;
+}
+

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url("header.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("banner.css");
+@import url("carrossel.css");
 
 
 :root{
@@ -11,10 +13,70 @@
     --cor-gradiente-inicio: #002F52;
     --cor-gradiente-fim: #326589;
     --posicao-segundo-ponto-gradiente: 165.37%;
+    --fonte-principal: "Poppins";
+    --card-cor-texto: #002F52;
+    --card-cor-descricao: #000000;
+    --card-cor-backround: #FFFFFF;
 }
 
 body{
     background-color: var(--cor-de-fundo);
-    font-family: "Poppins", sans-serif;
+    font-family: var(--fonte-principal), sans-serif;
     font-weight: 400;
 }
+
+.card {
+    background-color: var(--cor-cabecalho);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.card__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__conteudo__informativo{
+    color: var(--cor-botao);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.card__conteudo__titulo{
+    color: var(--cor-sessao-fundo);
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem 0.75rem 0;
+}
+
+.card__conteudo__descricao {
+    color: var(--card-cor-descricao);
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0 3.25rem 0 0;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0 0 0;
+    align-items: center;
+}
+
+.card__botoes__lista{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__botoes__link {
+    padding: 1rem 2.25rem;
+    background: var(--cor-botao);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--card-cor-backround);
+    text-decoration: none;
+}
+
+
