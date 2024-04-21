@@ -4,7 +4,7 @@
     color: var(--cor-botao);
     font-size: 1.125rem;
     font-weight: 700;
-    background: var(--cor-cabecalho);
+    background: var(--cor-branco);
     text-transform: uppercase;
     padding: 0.75rem;
 }

@@ -1,0 +1,30 @@
+.topicos {
+    text-align: center;
+    background: var(--cor-sessao-fundo);
+    color: var(--cor-branco);
+}
+
+.topicos__titulo {
+    padding: 1.7rem;
+    font-weight: 300;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.topicos__item {
+    margin: 1.6rem 0.6rem;
+}
+
+.topicos__item__link {
+    text-decoration: none;
+    background: var(--cor-botao);
+    color: var(--cor-branco);
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 1rem;
+}
