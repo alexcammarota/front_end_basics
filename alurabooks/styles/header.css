@@ -63,7 +63,7 @@
 }
 
 .header__lista__item {
-    color: var(--cor-gradiente-inicio)
+    color: var(--cor-gradiente-inicio);
     text-transform: uppercase;
 }
 
