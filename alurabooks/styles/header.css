@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--cor-cabecalho);
+    background: var(--cor-branco);
     background-position: center;
     position: relative;
 }
@@ -53,7 +53,7 @@
 
 .header__lista__titulo, .header__lista__item {
     padding: 1em;
-    background: var(--cor-cabecalho);
+    background: var(--cor-branco);
 }
 
 .header__lista__titulo{
@@ -63,13 +63,7 @@
 }
 
 .header__lista__item {
-    color: linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
-    /* Para navegadores WebKit (Chrome, Safari) */
-    color: -webkit-linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim)  var(--posicao-segundo-ponto-gradiente));
-    /* Para navegadores antigos da Mozilla */
-    color: -moz-linear-gradient(var(--angulo-gradiente), var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
-    /* Para navegadores antigos do Internet Explorer */
-    color: -ms-linear-gradient(var(--angulo-gradiente)g, var(--cor-gradiente-inicio) 35.49%, var(--cor-gradiente-fim) var(--posicao-segundo-ponto-gradiente));
+    color: var(--cor-gradiente-inicio)
     text-transform: uppercase;
 }
 

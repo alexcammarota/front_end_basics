@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url("header.css");
 @import url("banner.css");
 @import url("carrossel.css");
+@import url("topicos.css");
+@import url("contato.css");
+@import url("footer.css");
 
 
 :root{
-    --cor-cabecalho: #FFFFFF;
+    --cor-branco: #FFFFFF;
     --cor-de-fundo: #C4C4C4;
     --cor-botao: #EB9B00;
     --cor-sessao-fundo: #002F52;
@@ -17,6 +20,9 @@
     --card-cor-texto: #002F52;
     --card-cor-descricao: #000000;
     --card-cor-backround: #FFFFFF;
+    --separador-footer: #858585;
+    --background-footer: #F9F9F9;
+    --cor-texto-footer: #000000;
 }
 
 body{
@@ -26,7 +32,7 @@ body{
 }
 
 .card {
-    background-color: var(--cor-cabecalho);
+    background-color: var(--cor-branco);
     padding: 1rem;
     margin: 1rem;
     border-radius: 10px;
@@ -35,6 +41,14 @@ body{
 .card__main {
     display: flex;
     justify-content: space-between;
+}
+
+.card__estrela {
+    display: inline-block;
+    width: 45%; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
+    background-image: url('../assets/images/estrela.svg'); /* Caminho para sua imagem de estrela */
+    background-repeat: repeat-x;
 }
 
 .card__conteudo__informativo{
