@@ -22,3 +22,18 @@
     margin: 0.25rem 0;
 }
 
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-wrapper {
+        margin-top: 2.5rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 56%;
+    }
+}
+
