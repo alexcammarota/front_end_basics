@@ -31,12 +31,13 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+    background-position-x: right;
 }
 
 .combos__conteudo {
     display: flex;
     flex-direction: column;
-    padding: 13rem;
+    padding: 14rem 2rem;
 }
 
 .combos__conteudo__titulo{
@@ -96,7 +97,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    margin: 0px 22rem;
+    margin: 0px 4rem;
 }
 
 .secao-secundaria__conteudo__titulo{
@@ -110,6 +111,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     color: var(--branco-descricao-texto);
+    padding-right: 12rem;
 }
 
 .secundario__conteudo {
@@ -119,6 +121,10 @@ body {
 .secao-secundaria .combos__conteudo__assinatura__botao.principal{
     display: inline-block;
     margin-top: 0.8rem;
+}
+
+.secao-secundaria>img{
+    margin: 0 auto;
 }
 
 .dispositivos{
@@ -165,4 +171,66 @@ body {
     font-size: 0.875rem;
     color: var(--cinza-secundario-texto);
     padding-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width:1024px){
+
+    body{
+        width: 100%;
+        text-align: center;
+    }
+    .combos{
+        background-image: none;
+        display: flex;
+        margin: 2rem 2rem;
+    }
+
+    .secao-secundaria{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .combos__conteudo, .combos__conteudo__assinatura, .combos__conteudo__assinatura__imagem {
+        padding: 0;
+    }
+
+    .secao-secundaria{
+        margin: 1rem 3rem;
+        max-width: 100%;
+        height: auto;
+        gap: 4rem;
+    }
+
+    .secao-secundaria>img{
+        max-width: 100%;
+        height: auto;
+    } 
+
+    .secao-secundaria__conteudo__descricao{
+        padding-right: 0;
+    }
+    
+    .combos__conteudo__assinatura__imagem{
+        margin: 2rem 0;
+        max-width: 100%;
+    }
+
+    .dispositivos {
+        padding: 3rem 0;
+    }
+
+    .dispositivos__lista{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .footer{
+        margin: 0 2rem;
+    }
+
+    .footer__lista{
+        flex-direction: column;
+    }
 }
