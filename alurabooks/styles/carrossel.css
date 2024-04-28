@@ -22,3 +22,35 @@
     margin: 0.25rem 0;
 }
 
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-wrapper {
+        margin-top: 2.5rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 56%;
+    }
+}
+
+@media screen and (min-width: 1074px){
+    .carrossel__container{
+        display: flex;
+        align-items: center;
+        margin: 4rem 10rem;
+    }
+
+    .carrossel__titulo{
+        font-size: 2rem;
+        padding: 2.6rem 0 1.5rem 0;
+    }
+
+    .swiper-wrapper {
+        margin-top: 0.5rem;
+    }
+    
+}

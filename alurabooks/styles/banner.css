@@ -39,3 +39,25 @@
     background: url(../assets/images/lupa.svg) no-repeat;
     background-position: 1.5rem;
 }
+
+@media screen and (min-width: 1024px){
+    
+    .banner__titulo{
+        font-size: 2.25vw;
+    }
+
+    #banner__pesquisa{
+        width: 40%;
+    }
+
+    #banner__pesquisa::placeholder{
+        background-position: 4.5rem;
+    }
+}
+
+@media screen and (min-width:1728px){
+    
+    #banner__pesquisa{
+        width: 25%;
+    }
+}

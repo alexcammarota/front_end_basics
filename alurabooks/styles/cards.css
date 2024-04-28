@@ -1,0 +1,88 @@
+
+.card {
+    background-color: var(--cor-branco);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.card__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__estrela {
+    display: inline-block;
+    width: 45%; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
+    background-image: url('../assets/images/estrela.svg'); /* Caminho para sua imagem de estrela */
+    background-repeat: repeat-x;
+}
+
+.card__conteudo__informativo{
+    color: var(--cor-botao);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.card__conteudo__titulo{
+    color: var(--cor-sessao-fundo);
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem 0.75rem 0;
+}
+
+.card__conteudo__descricao {
+    color: var(--card-cor-descricao);
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0 3.25rem 0 0;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0 0 0;
+    align-items: center;
+}
+
+.card__botoes__lista{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__botoes__link {
+    padding: 1rem 2.25rem;
+    background: var(--cor-botao);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--card-cor-backround);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 45%;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (min-width: 1072px){
+    .card {
+        width: 38%;
+        margin-left: 4rem;
+    }
+
+    .card__conteudo__informativo{
+        font-size: 2rem;
+    }
+
+    .card__conteudo__descricao{
+        font-size: 1rem;
+    }
+
+    .card__estrela{
+        width: 20%;
+    }
+}

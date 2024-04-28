@@ -71,3 +71,105 @@
     text-decoration: none;
     width: 60vw;
 }
+
+.header__lista__menu__label{
+    padding: 1.6rem;
+}
+
+#header__lista__menu-checkbox:checked~.header__lista__menu__label{
+    background: var(--cor-gradiente-inicio);
+    padding: 1.6rem;
+    color: var(--cor-branco);
+}
+
+
+
+.header__titulo, .header__lista__menu, .header__lista__menu__itens, .header__container__item__texto {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .header__menu__label{
+        display: none;
+    }
+
+    .header__container__item-transparente{
+        display: none;
+    }
+
+    .header__titulo {
+        display: block;
+        font-family: var(--fonte-secundaria), sans-serif;
+        font-weight: 400;
+        font-size: 1.875rem;
+    }
+
+    .header__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .header__lista__menu{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    .header__lista__menu__item__link{
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+
+
+    .header__lista__menu-checkbox{
+        display: none;
+    }
+
+    .header__lista__menu-checkbox:checked ~ .header__lista__menu__itens {
+        display: block;
+        position: absolute;
+        top: 100%;
+       
+    }
+
+  
+    .header__lista__item a{
+        color: var(--cor-sessao-fundo);
+        padding: 0.5rem 1.75rem;
+    }
+
+    .header__lista__item:hover, .header__lista__item:hover>a{
+        background: var(--cor-sessao-fundo);
+        color: var(--cor-branco);
+    }
+    
+    .header__lista__item a:hover{
+        color: var(--cor-branco);
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .header__container__item_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+
+    .header__container__item__texto{
+        display: block;
+    }
+
+    .header {
+        padding: 0px 4rem;
+    }
+
+    .header__lista__menu{
+        margin-right: auto;
+        margin-left: 3rem;
+    }
+}
+    
