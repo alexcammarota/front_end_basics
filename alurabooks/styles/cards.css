@@ -67,3 +67,22 @@
         margin: 3rem auto;
     }
 }
+
+@media screen and (min-width: 1072px){
+    .card {
+        width: 38%;
+        margin-left: 4rem;
+    }
+
+    .card__conteudo__informativo{
+        font-size: 2rem;
+    }
+
+    .card__conteudo__descricao{
+        font-size: 1rem;
+    }
+
+    .card__estrela{
+        width: 20%;
+    }
+}

@@ -39,3 +39,15 @@
         color: var(--cor-link-footer);
     }
 }
+
+@media screen and (min-width: 1072px) {
+    .footer__lista {
+        display: flex;
+        gap: 18vw;
+    }
+
+    .footer__lista>ul {
+        border-left: 1px solid var(--separador-footer);
+        padding-left: 1vw;
+    }
+}
